@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:padding="16dp"
+    android:background="@color/black"
+    >
+<!--////////////////////////////////////////////////////////////////////////////////////-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        >
+        <!--        -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/q1"
+            android:textColor="#FFEB3B"
+            android:textSize="30sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/what_is_the_purpose_of_the_n_flag_in_the_psr_of_cortex_m_processors"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:background="#009688"
+
+            />
+        <RadioGroup
+
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:id="@+id/answerQ1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            >
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="R14 is a stack pointer"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:id="@+id/Q1A"
+
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="R14 is used to point the next instruction to be fetched"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:id="@+id/Q1B"
+
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="None of the previous"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:id="@+id/Q1C"
+
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="R14 is used to store the return address"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:id="@+id/Q1D"
+
+
+                />
+
+        </RadioGroup>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/submit"
+                android:textAllCaps="false"
+                android:layout_marginRight="30dp"
+                android:backgroundTint="#2196F3"
+                android:onClick="handleQ"
+                android:id="@+id/submitQ1"
+                />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/clear"
+                android:textAllCaps="false"
+                android:backgroundTint="#2196F3"
+                android:onClick="handleQ"
+                android:id="@+id/ClearQ1"
+                />
+
+        </LinearLayout>
+
+
+
+    <View
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white"
+        />
+
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/q2"
+            android:textColor="#FFEB3B"
+            android:textSize="30sp"
+            android:textAllCaps="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/what_is_the_purpose_of_register_r14_in_the_arm_cortex_m_processors"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:background="@color/teal_700"
+            />
+
+        <RadioGroup
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:id="@+id/answerQ2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/the_n_flag_is_set_if_the_result_of_the_operation_is_less_than_zero"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:id="@+id/Q2A"
+
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/none_of_the_previous"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:id="@+id/Q2B"
+
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/the_n_flag_is_set_if_result_of_the_operation_is_zero"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:id="@+id/Q2C"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/the_n_flag_is_set_after_performing_an_n_arithmetic_operation"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:id="@+id/Q2D"
+                />
+
+
+        </RadioGroup>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/submit"
+                android:textAllCaps="false"
+                android:layout_marginRight="30dp"
+                android:backgroundTint="#2196F3"
+                android:onClick="handleQ"
+                android:id="@+id/submitQ2"
+                />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/clear"
+                android:textAllCaps="false"
+                android:backgroundTint="#2196F3"
+                android:onClick="handleQ"
+                android:id="@+id/ClearQ2"
+                />
+
+        </LinearLayout>
+        <View
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white"
+            />
+
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="q3"
+            android:textColor="#FFEB3B"
+            android:textSize="30sp"
+            android:textAllCaps="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/what_is_the_size_of_the_ram_in_the_tm4c123_microcontroller"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:background="@color/teal_700"
+
+            />
+
+        <RadioGroup
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:id="@+id/answerQ3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="32 KB"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:id="@+id/Q3A"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="64 KB"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:id="@+id/Q3B"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="128 KB"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:id="@+id/Q3C"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="256 KB"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:id="@+id/Q3D"
+
+                />
+
+
+        </RadioGroup>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/submit"
+                android:textAllCaps="false"
+                android:layout_marginRight="30dp"
+                android:backgroundTint="#2196F3"
+                android:onClick="handleQ"
+                android:id="@+id/submitQ3"
+                />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/clear"
+                android:textAllCaps="false"
+                android:backgroundTint="#2196F3"
+                android:onClick="handleQ"
+                android:id="@+id/ClearQ3"
+                />
+
+        </LinearLayout>
+        <View
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white"
+            />
+
+<!--q4////////////////////////////////////////////////////-->
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="q4"
+            android:textColor="#FFEB3B"
+            android:textSize="30sp"
+            android:textAllCaps="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What does general purpose registers hold?"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:background="@color/teal_700"
+            />
+
+        <RadioGroup
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:id="@+id/answerQ4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:id="@+id/Q4A"
+                />
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Data"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:id="@+id/Q4B"
+                />
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="None of the pervious"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:id="@+id/Q4C"
+                />
+
+
+        </RadioGroup>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/submit"
+                android:textAllCaps="false"
+                android:layout_marginRight="30dp"
+                android:backgroundTint="#2196F3"
+                android:onClick="handleQ"
+                android:id="@+id/submitQ4"
+                />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/clear"
+                android:textAllCaps="false"
+                android:backgroundTint="#2196F3"
+                android:onClick="handleQ"
+                android:id="@+id/ClearQ4"
+
+                />
+
+        </LinearLayout>
+        <View
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Finish attempt"
+            android:backgroundTint="#4CAF50"
+            android:layout_marginBottom="16dp"
+            android:id="@+id/FinishAttempt"
+            android:onClick="FinalSubmmit"
+            />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score"
+        android:textColor="@color/white"
+        android:layout_marginBottom="30dp"
+        android:textSize="30sp"
+        android:id="@+id/ScoreId"
+        />
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>

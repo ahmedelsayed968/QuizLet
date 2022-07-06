@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">QuizLet</string>
+    <string name="q1">Q1</string>
+    <string name="what_is_the_purpose_of_the_n_flag_in_the_psr_of_cortex_m_processors">What is the purpose of the N flag in the PSR of Cortex-M processors?</string>
+    <string name="the_n_flag_is_set_if_the_result_of_the_operation_is_less_than_zero">The N flag is set if the result of the operation is less than zero</string>
+    <string name="the_n_flag_is_set_after_performing_an_n_arithmetic_operation">The N flag is set after performing an N arithmetic operation</string>
+    <string name="the_n_flag_is_set_if_result_of_the_operation_is_zero">The N flag is set if result of the operation is zero</string>
+    <string name="none_of_the_previous">None of the previous</string>
+    <string name="q2">q2</string>
+    <string name="what_is_the_purpose_of_register_r14_in_the_arm_cortex_m_processors">What is the purpose of register R14 in the ARM Cortex-M processors?</string>
+    <string name="what_is_the_size_of_the_ram_in_the_tm4c123_microcontroller">What is the size of the RAM in the TM4C123 Microcontroller?</string>
+    <string name="submit">Submit</string>
+    <string name="clear">Clear</string>
+</resources>
